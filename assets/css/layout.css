@@ -1,0 +1,235 @@
+header{
+
+    height:82px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+
+}
+
+main{
+
+    width:min(1400px,94%);
+
+    margin:auto;
+
+    padding:35px 0 60px;
+
+}
+
+section{
+
+    margin-bottom:45px;
+
+}
+
+.hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.search-large{
+
+    display:flex;
+
+    align-items:center;
+
+    width:620px;
+
+    background:#F4F6EF;
+
+    border-radius:40px;
+
+    padding:8px 10px;
+
+}
+
+.search-large input{
+
+    flex:1;
+
+    padding:12px 20px;
+
+    background:none;
+
+}
+
+.categories{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.featured{
+
+    display:grid;
+
+    grid-template-columns:1.3fr 1fr;
+
+    overflow:hidden;
+
+    background:var(--primary-light);
+
+    border-radius:22px;
+
+}
+
+.trending{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+}
+
+footer{
+
+    padding:25px;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+}
+.recipes-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+margin-top:25px;
+
+}
+
+.filters{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+.recipe-hero{
+
+display:grid;
+
+grid-template-columns:1.2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.recipe-body{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    margin-bottom:25px;
+
+}
+
+.recipe-form{
+
+    background:white;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+}
+.recipe-form label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+}
+
+.recipe-form input,
+.recipe-form textarea,
+.recipe-form select{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:#FAFBF8;
+
+    font-size:1rem;
+
+}
+
+.recipe-form textarea{
+
+    resize:vertical;
+
+}
+.recipe-form>label{
+
+    margin-top:20px;
+
+}
+main{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    padding:50px 0;
+
+}
