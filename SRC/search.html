@@ -39,6 +39,7 @@
         <i class="fa-solid fa-magnifying-glass"></i>
 
         <input
+            id="headerSearch"
             type="text"
             placeholder="Buscar recetas">
 
@@ -81,6 +82,7 @@
 <div class="search-large">
 
 <input
+id="searchInput"
 type="text"
 placeholder="Busca por nombre, ingrediente o categoría...">
 
@@ -98,23 +100,23 @@ placeholder="Busca por nombre, ingrediente o categoría...">
 
 <div class="filters">
 
-<button class="filter active">
+<button class="filter active" type="button" data-category="all">
 Todas
 </button>
 
-<button class="filter">
+<button class="filter" type="button" data-category="Desayunos">
 Desayunos
 </button>
 
-<button class="filter">
+<button class="filter" type="button" data-category="Almuerzos">
 Almuerzos
 </button>
 
-<button class="filter">
+<button class="filter" type="button" data-category="Cenas">
 Cenas
 </button>
 
-<button class="filter">
+<button class="filter" type="button" data-category="Postres">
 Postres
 </button>
 
@@ -124,7 +126,7 @@ Postres
 
 <section>
 
-<div class="recipes-grid">
+<div class="recipes-grid" id="searchResults">
 
 <article class="recipe-card">
 
@@ -234,6 +236,7 @@ Culina • Inspírate, cocina y comparte.
 
 </footer>
 
+<script src="../js/app.js"></script>
 </body>
 
 </html>

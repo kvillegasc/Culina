@@ -186,3 +186,107 @@ docs: actualiza documentación del proyecto
 * Implementación de estilos.
 * Programación de funcionalidades con JavaScript.
 * Integración de componentes interactivos.
+
+# Instalación y ejecución
+
+Para ejecutar el proyecto de forma local, siga los siguientes pasos:
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/kvillegasc/Culina.git
+```
+
+2. Ingresar a la carpeta del proyecto:
+
+```bash
+cd Culina
+```
+
+3. Abrir el proyecto en Visual Studio Code.
+
+4. Instalar la extensión **Live Server** (si aún no está instalada).
+
+5. Abrir el archivo `index.html`.
+
+6. Hacer clic derecho sobre `index.html` y seleccionar:
+
+```
+Open with Live Server
+```
+
+El proyecto se abrirá automáticamente en el navegador predeterminado.
+
+---
+
+## Estructura del proyecto
+
+```
+Culina/
+│
+├── assets/
+│   ├── css/
+│   │   ├── base.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   └── responsive.css
+│   │
+│   ├── images/
+│   └── icons/
+│
+├── pages/
+│   ├── dashboard-user.html
+│   ├── dashboard-chef.html
+│   ├── search.html
+│   ├── recipe.html
+│   ├── favorites.html
+│   └── create-recipe.html
+│
+├── docs/
+│
+├── index.html
+│
+└── README.md
+```
+
+---
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Responsive Design
+- Font Awesome
+- Google Fonts (Poppins)
+
+---
+
+## Funcionalidades implementadas
+
+### Usuario
+
+- Inicio de sesión.
+- Explorar recetas.
+- Buscar recetas.
+- Ver detalle de una receta.
+- Guardar recetas favoritas.
+
+### Chef
+
+- Panel del chef.
+- Crear nuevas recetas.
+- Gestionar recetas publicadas.
+
+---
+
+## Estado del proyecto
+
+Este proyecto corresponde al **Avance II** del curso **Diseño y Programación Web** y representa la implementación del frontend basada en los wireframes desarrollados durante el Avance I.
+
+---
+
+## Nota para la docente
+
+Debido a situaciones personales y a una falta de organización de mi parte, no logré entregar el Avance I en la fecha establecida. Por ello presento ambos avances en esta entrega. Ofrezco una disculpa por mi irresponsabilidad y agradezco su comprensión. Me comprometo a mantener un mayor compromiso y dedicación con el curso en adelante.
