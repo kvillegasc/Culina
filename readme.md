@@ -187,6 +187,30 @@ docs: actualiza documentación del proyecto
 * Programación de funcionalidades con JavaScript.
 * Integración de componentes interactivos.
 
+Avance 3 — Funcionalidad e Interactividad
+
+En este avance se implementó la funcionalidad e interactividad de la plataforma Culina mediante JavaScript, transformando la interfaz desarrollada en los avances anteriores en una aplicación web funcional.
+
+Funcionalidades implementadas
+* Búsqueda dinámica de recetas.
+* Filtrado de recetas por categorías y presupuesto.
+* Sistema de favoritos.
+* Visualización del detalle de las recetas.
+* Navegación entre las diferentes secciones de la plataforma.
+* Menú de navegación responsive con botón hamburguesa.
+* Apertura y cierre del menú en dispositivos pequeños.
+* Adaptación de la navegación según el tamaño de pantalla.
+* Mensajes interactivos para proporcionar retroalimentación al usuario.
+* Manipulación dinámica del contenido mediante JavaScript.
+* Actualización dinámica de resultados y cantidad de recetas mostradas.
+* Tecnologías utilizadas
+* JavaScript para la lógica e interactividad.
+* HTML5 para la estructura de los elementos dinámicos.
+* CSS3 para los estados visuales y diseño responsive.
+Resultado
+
+Con este avance, Culina pasó de ser una interfaz estática a una plataforma frontend funcional, donde las acciones del usuario producen respuestas dinámicas y la experiencia se adapta tanto a computadoras como a dispositivos móviles.
+
 # Instalación y ejecución
 
 Para ejecutar el proyecto de forma local, siga los siguientes pasos:
