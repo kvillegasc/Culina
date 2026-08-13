@@ -307,10 +307,5 @@ Culina/
 
 ## Estado del proyecto
 
-Este proyecto corresponde al **Avance II** del curso **Diseño y Programación Web** y representa la implementación del frontend basada en los wireframes desarrollados durante el Avance I.
-
+Este proyecto corresponde al **Avance III** del curso **Diseño y Programación Web** 
 ---
-
-## Nota para la docente
-
-Debido a situaciones personales y a una falta de organización de mi parte, no logré entregar el Avance I en la fecha establecida. Por ello presento ambos avances en esta entrega. Ofrezco una disculpa por mi irresponsabilidad y agradezco su comprensión. Me comprometo a mantener un mayor compromiso y dedicación con el curso en adelante.
