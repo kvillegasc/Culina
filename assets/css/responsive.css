@@ -1,114 +1,222 @@
-@media(max-width:1100px){
-
-    .categories{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .featured{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .trending{
-
-        grid-template-columns:repeat(3,1fr);
-
-    }
-
+/* Ajustes responsivos compartidos por todas las vistas. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-@media(max-width:768px){
-
-    header{
-
-        flex-wrap:wrap;
-
-        height:auto;
-
-        padding:20px;
-
-        gap:15px;
-
-    }
-
-    .nav-search{
-
-        width:100%;
-
-    }
-
-    .top-nav{
-
-        width:100%;
-
-        justify-content:center;
-
-        flex-wrap:wrap;
-
-    }
-
-    .search-large{
-
-        width:100%;
-
-    }
-
-    .categories{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .trending{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
+body {
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
 }
 
-@media(max-width:500px){
+button,
+input,
+textarea,
+select {
+    max-width: 100%;
+}
 
-    .trending{
-
-        grid-template-columns:1fr;
-
+@media (max-width: 1200px) {
+    header {
+        padding-inline: 20px;
+        gap: 14px;
     }
 
-    .login-card{
-
-        width:92%;
-
-        padding:30px;
-
+    .nav-search {
+        width: min(240px, 22vw);
     }
 
-}
-@media(max-width:768px){
+    .top-nav a {
+        padding: 10px 11px;
+    }
 
-.form-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.stats-grid{
-
-grid-template-columns:1fr;
-
+    .recipe-hero,
+    .recipe-body {
+        gap: 28px;
+    }
 }
 
-.section-header{
+@media (max-width: 1000px) {
+    header {
+        height: auto;
+        min-height: 82px;
+        flex-wrap: wrap;
+    }
 
-flex-direction:column;
+    .nav-search {
+        order: 3;
+        width: 100%;
+        flex-basis: 100%;
+    }
 
-align-items:flex-start;
+    .top-nav {
+        order: 4;
+        width: 100%;
+        flex-basis: 100%;
+        justify-content: space-around;
+        margin-left: auto;
+        overflow: hidden;
+    }
 
-gap:15px;
+    .top-nav a {
+        flex: 1 1 0;
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
 
+    .featured,
+    .recipe-hero,
+    .recipe-body {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-hero img {
+        height: min(52vw, 420px);
+    }
+
+    .trending {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
+@media (max-width: 700px) {
+    main {
+        width: min(100% - 32px, 1100px);
+        padding-block: 30px 45px;
+    }
+
+    section {
+        margin-bottom: 32px;
+    }
+
+    header {
+        padding: 14px 16px;
+    }
+
+    .left-nav {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .profile span {
+        display: none;
+    }
+
+    .top-nav {
+        order: 4;
+        width: 100%;
+        justify-content: space-around;
+        margin-left: 0;
+        overflow: hidden;
+    }
+
+    .top-nav a {
+        flex: 0 0 auto;
+        padding: 10px 13px;
+    }
+
+    .hero {
+        padding: 25px 0 15px;
+    }
+
+    .hero h1,
+    .page-title h1 {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+    }
+
+    .filters-section,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters-section {
+        display: grid;
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .filter-group select,
+    #clearFilters {
+        width: 100%;
+    }
+
+    .categories,
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .trending,
+    .recipes-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .featured-info,
+    .recipe-form,
+    .ingredients,
+    .steps {
+        padding: 24px;
+    }
+
+    .featured-image,
+    .recipe-hero img {
+        height: 250px;
+    }
+
+    .recipe-actions,
+    .recipe-buttons {
+        flex-wrap: wrap;
+    }
+
+    .recipe-actions .btn {
+        flex: 1 1 180px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .login-page {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .login-card {
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .message {
+        right: 16px;
+        bottom: 16px;
+        left: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .top-nav a {
+        font-size: 0;
+        min-width: 44px;
+    }
+
+    .top-nav a i {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .recipe-form,
+    .featured-info,
+    .ingredients,
+    .steps {
+        padding: 20px;
+    }
 }

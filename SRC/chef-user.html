@@ -30,7 +30,7 @@
 
 </button>
 
-<a href="dashboard-chef.html" class="logo">
+<a href="chef-user.html" class="logo">
 
 CULINA
 
@@ -40,7 +40,7 @@ CULINA
 
 <nav class="top-nav">
 
-<a class="active" href="dashboard-chef.html">
+<a class="active" href="chef-user.html">
 
 Dashboard
 
@@ -58,7 +58,7 @@ Mis recetas
 
 </a>
 
-<a href="../index.html">
+<a href="login.html">
 
 Cerrar sesión
 
@@ -98,7 +98,7 @@ Gestiona tus recetas y revisa el rendimiento de tus publicaciones.
 
 <div class="stat-card">
 
-<h2>24</h2>
+<h2 id="recipeTotal">0</h2>
 
 <p>Recetas publicadas</p>
 
@@ -136,7 +136,7 @@ Nueva receta
 
 </div>
 
-<div class="recipes-grid">
+<div class="recipes-grid" id="chefRecipes">
 
 <article class="recipe-card">
 
@@ -190,6 +190,7 @@ Ver receta
 
 </footer>
 
+<script src="../js/app.js"></script>
 </body>
 
 </html>

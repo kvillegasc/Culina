@@ -22,10 +22,18 @@
 
 <header>
 
+    <!-- LOGO / MENU -->
+
     <div class="left-nav">
 
-        <button class="icon-btn">
+        <button
+            class="icon-btn"
+            id="menuButton"
+            type="button"
+            aria-label="Abrir menú">
+
             <i class="fa-solid fa-bars"></i>
+
         </button>
 
         <h1 class="logo">
@@ -34,39 +42,67 @@
 
     </div>
 
+
+    <!-- BUSCADOR DEL HEADER -->
+
     <div class="nav-search">
 
         <i class="fa-solid fa-magnifying-glass"></i>
 
         <input
-            type="text"
-            placeholder="Buscar recetas">
+            type="search"
+            id="headerSearch"
+            placeholder="Buscar recetas"
+            autocomplete="off">
 
     </div>
 
+
+    <!-- NAVEGACIÓN -->
+
     <nav class="top-nav">
 
-        <a class="active" href="dashboard-user.html">
+        <a
+            class="active"
+            href="dashboard-user.html">
+
             <i class="fa-solid fa-compass"></i>
+
             Explorar
+
         </a>
 
+
         <a href="favorites.html">
+
             <i class="fa-regular fa-bookmark"></i>
+
             Guardadas
+
         </a>
+
 
         <a href="#">
+
             <i class="fa-regular fa-bell"></i>
+
             Actualizaciones
+
         </a>
 
+
         <a href="favorites.html">
+
             <i class="fa-regular fa-heart"></i>
+
             Favoritos
+
         </a>
 
     </nav>
+
+
+    <!-- PERFIL -->
 
     <div class="profile">
 
@@ -78,217 +114,317 @@
 
 </header>
 
+
 <main>
 
-<section class="hero">
+    <!-- HERO -->
 
-    <h1>
-        Buenos días, Kate 👋
-    </h1>
+    <section class="hero">
 
-    <p>
-        ¿Qué vamos a cocinar hoy?
-    </p>
+        <h1>
+            Buenos días, Kate
+        </h1>
 
-    <div class="search-large">
+        <p>
+            ¿Qué vamos a cocinar hoy?
+        </p>
 
-        <input
-        type="text"
-        placeholder="Buscar recetas, ingredientes o categorías...">
 
-        <button class="icon-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-large">
+
+            <input
+                type="search"
+                id="mainSearch"
+                placeholder="Buscar recetas, ingredientes o categorías..."
+                autocomplete="off">
+
+            <button
+                class="icon-btn"
+                id="searchButton"
+                type="button"
+                aria-label="Buscar">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FILTROS -->
+
+    <section class="filters-section">
+
+        <div class="filter-group">
+
+            <label for="categoryFilter">
+                Categoría
+            </label>
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    Todas
+                </option>
+
+                <option value="Desayunos">
+                    Desayunos
+                </option>
+
+                <option value="Almuerzos">
+                    Almuerzos
+                </option>
+
+                <option value="Cenas">
+                    Cenas
+                </option>
+
+                <option value="Postres">
+                    Postres
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <label for="budgetFilter">
+                Presupuesto
+            </label>
+
+            <select id="budgetFilter">
+
+                <option value="all">
+                    Cualquier precio
+                </option>
+
+                <option value="low">
+                    Menos de ₡3.000
+                </option>
+
+                <option value="medium">
+                    ₡3.000 - ₡6.000
+                </option>
+
+                <option value="high">
+                    Más de ₡6.000
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            type="button"
+            id="clearFilters"
+            class="btn">
+
+            Limpiar filtros
+
         </button>
 
-    </div>
+    </section>
 
-</section>
 
-<section>
+    <!-- CATEGORÍAS -->
 
-<h2>Categorías</h2>
+    <section>
 
-<div class="categories">
+        <h2>
+            Categorías
+        </h2>
 
-<div class="category">
 
-<div class="category-icon"></div>
+        <div
+            class="categories"
+            id="categoriesContainer">
 
-<span>Desayunos</span>
 
-</div>
+            <button
+                class="category"
+                type="button"
+                data-category="Desayunos">
 
-<div class="category">
+                <div class="category-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
 
-<div class="category-icon"></div>
+                <span>
+                    Desayunos
+                </span>
 
-<span>Almuerzos</span>
+            </button>
 
-</div>
 
-<div class="category">
+            <button
+                class="category"
+                type="button"
+                data-category="Almuerzos">
 
-<div class="category-icon"></div>
+                <div class="category-icon">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
 
-<span>Cenas</span>
+                <span>
+                    Almuerzos
+                </span>
 
-</div>
+            </button>
 
-<div class="category">
 
-<div class="category-icon"></div>
+            <button
+                class="category"
+                type="button"
+                data-category="Cenas">
 
-<span>Postres</span>
+                <div class="category-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
 
-</div>
+                <span>
+                    Cenas
+                </span>
 
-</div>
+            </button>
 
-</section>
 
-<section>
+            <button
+                class="category"
+                type="button"
+                data-category="Postres">
 
-<h2>Receta del día</h2>
+                <div class="category-icon">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
 
-<div class="featured">
+                <span>
+                    Postres
+                </span>
 
-<img
-class="featured-image"
-src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=1200"
-alt="Pasta Alfredo">
+            </button>
 
-<div class="featured-info">
+        </div>
 
-<h2>Pasta Alfredo Cremosa</h2>
+    </section>
 
-<p>
-<i class="fa-regular fa-clock"></i>
-25 min
-</p>
 
-<p>
-⭐ 4.9
-</p>
+    <!-- RECETA DEL DÍA -->
 
-<p>
-💲 Económica
-</p>
+    <section>
 
-<a
-class="btn"
-href="recipe.html">
+        <h2>
+            Receta del día
+        </h2>
 
-Ver receta
 
-</a>
+        <div
+            class="featured"
+            id="featuredRecipe">
 
-</div>
+            <img
+                class="featured-image"
+                src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=1200"
+                alt="Pasta Alfredo">
 
-</div>
 
-</section>
+            <div class="featured-info">
 
-<section>
+                <h2>
+                    Pasta Alfredo Cremosa
+                </h2>
 
-<h2>Tendencias</h2>
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    25 min
+                </p>
 
-<div class="trending">
+                <p>
+                    ⭐ 4.9
+                </p>
 
-<div class="recipe-card">
+                <p>
+                    💲 Económica
+                </p>
 
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
 
-<div class="recipe-content">
+                <a
+                    class="btn"
+                    href="recipe.html">
 
-<h3>Ensalada</h3>
+                    Ver receta
 
-⭐ 4.8
+                </a>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-<div class="recipe-card">
+    </section>
 
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
 
-<div class="recipe-content">
+    <!-- RECETAS -->
 
-<h3>Pizza</h3>
+    <section>
 
-⭐ 4.9
+        <div class="section-header">
 
-</div>
+            <h2>
+                Explorar recetas
+            </h2>
 
-</div>
+            <span id="resultsCount">
+                0 recetas
+            </span>
 
-<div class="recipe-card">
+        </div>
 
-<img src="https://images.unsplash.com/photo-1525755662778-989d0524087e">
 
-<div class="recipe-content">
+        <div
+            class="trending"
+            id="recipesContainer">
 
-<h3>Pancakes</h3>
+            <!-- JavaScript insertará las recetas aquí -->
 
-⭐ 4.9
+        </div>
 
-</div>
 
-</div>
+        <p
+            id="noResults"
+            class="no-results"
+            hidden>
 
-<div class="recipe-card">
+            No encontramos recetas que coincidan con tu búsqueda.
 
-<img src="https://images.unsplash.com/photo-1547592180-85f173990554">
+        </p>
 
-<div class="recipe-content">
-
-<h3>Sopa</h3>
-
-⭐ 4.7
-
-</div>
-
-</div>
-
-<div class="recipe-card">
-
-<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
-
-<div class="recipe-content">
-
-<h3>Brownie</h3>
-
-⭐ 4.8
-
-</div>
-
-</div>
-
-<div class="recipe-card">
-
-<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
-
-<div class="recipe-content">
-
-<h3>Frutas</h3>
-
-⭐ 4.9
-
-</div>
-
-</div>
-
-</div>
-
-</section>
+    </section>
 
 </main>
 
+
+<!-- MENSAJES -->
+
+<div
+    id="message"
+    class="message"
+    role="alert"
+    hidden>
+</div>
+
+
 <footer>
 
-Culina • Inspírate, cocina y comparte.
+    Culina • Inspírate, cocina y comparte.
 
 </footer>
+
+
+<script src="../js/app.js"></script>
 
 </body>
 
